@@ -115,7 +115,6 @@ def cria_dataframe(df):
     dataframe = dataframe[selecao]
     dataframe.drop_duplicates(inplace=True)
     dataframe.set_index('Conhecimento',inplace=True)
-    dataframe.rename_axis(['Teste'],axis=1,inplace=True)
     return dataframe
 
 def converter_para_excel(df):
